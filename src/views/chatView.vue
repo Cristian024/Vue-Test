@@ -32,7 +32,7 @@ const registerUser = (e) => {
 }
 
 const initSocket = () => {
-    socket = io("https://chat-server-weld-seven.vercel.app");
+    socket = io("https://dark-ring-amaryllis.glitch.me");
 
     socket.on('chat_message', (msg) => {
         messages.value.push(msg);
