@@ -201,7 +201,6 @@ const initSocket = () => {
 
 .form-user form {
     width: 100vmin;
-    height: 50vmin;
     background-color: white;
     color: black;
     display: flex;
