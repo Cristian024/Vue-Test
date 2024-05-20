@@ -1,10 +1,17 @@
 <script setup>
 
+import { RouterLink, RouterView } from 'vue-router'
+
 </script>
 
 <template>
   <div class="app">
-    <router-view></router-view>
+    <div class="links">
+      <RouterLink to="/chat">Chat</RouterLink>
+      <RouterLink to="/exposicion">Ejemplo</RouterLink>
+    </div>
+
+    <RouterView />
   </div>
   <!--
   <h2>Array asincrono</h2>
@@ -14,5 +21,10 @@
   -->
 </template>
 
-<style></style>
+<style>
+  .links{
+    display: flex;
+    flex-direction: column;
+  }
 
+</style>
