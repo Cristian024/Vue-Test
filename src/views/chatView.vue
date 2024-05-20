@@ -159,7 +159,7 @@ const initSocket = () => {
     width: 100%;
     height: 60px;
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 80% 20%;
     padding-bottom: 5px;
 }
 
