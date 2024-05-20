@@ -139,11 +139,13 @@ const initSocket = () => {
 
 .conversations .message .subcontainer.user_session{
     background-color: rgb(169, 137, 6);
+    color: black;
     margin-left: auto;
 }
 
 .conversations .message .subcontainer.user_external{
     background-color: rgb(24, 24, 24);
+    color: white;
     margin-right: auto;
 }
 
@@ -165,6 +167,7 @@ const initSocket = () => {
 
 .chat .input-conversation input[type='submit'] {
     background-color: black;
+    color: white;
     border: none;
     outline: none;
     cursor: pointer;
@@ -232,6 +235,7 @@ const initSocket = () => {
     width: calc(100% - 10vmin);
     height: 50px;
     background-color: black;
+    color: white;
     border-radius: 10px;
     font-size: 15px;
     font-weight: 800;
