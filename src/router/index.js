@@ -19,6 +19,11 @@ const router = createRouter({
             component: () => import("../views/testView.vue")
         },
         {
+            path: '/chat',
+            name: 'chat',
+            component: () => import("../views/chatView.vue")
+        },
+        {
             path: '/exposicion',
             name: 'exposicion',
             component: () => import("../views/expoView.vue")
