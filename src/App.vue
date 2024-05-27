@@ -6,10 +6,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div class="app">
-    <div class="links">
-      <RouterLink to="/chat">Chat</RouterLink>
-      <RouterLink to="/exposicion">Ejemplo</RouterLink>
-    </div>
 
     <RouterView />
   </div>
@@ -22,9 +18,6 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style>
-  .links{
-    display: flex;
-    flex-direction: column;
-  }
+
 
 </style>

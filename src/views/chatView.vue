@@ -37,13 +37,17 @@ const initSocket = () => {
     socket.on('chat_message', (msg) => {
         messages.value.push(msg);
         messagesDiv = document.querySelector('.conversations');
-        document.querySelector('.conversations').scrollTop = document.querySelector('.conversations').scrollHeight + 10;
+        messagesDiv.scrollTop = messagesDiv.scrollHeight + 10;
+        if(msg.userName != userName){
+            document.querySelector('.notification').play();
+        }
     })
 }
 
 </script>
 
 <template>
+
     <div class="chat">
         <div class="conversations">
             <div class="message" v-for="(item, index) in messages">
